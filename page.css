@@ -1,0 +1,132 @@
+body {
+	margin: 0px 0px 0px 0px;
+	font-family: 'Lucida Console';
+}
+
+#left {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	background-color: #444;
+	outline: inset #888;
+	z-index: 1;
+}
+
+.title {
+	padding-top: 12px;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 0px 0px 7px #888;
+}
+
+#bug-report-area {
+	margin: 20px 20px 20px 20px;
+	width: calc(100% - 40px);
+	height: calc(100% - 100px);
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	box-shadow: 0px 0px 12px 1px #555;
+	resize: none;
+	background-color: #666;
+}
+
+#bug-report-area:hover, #bug-report-area:focus {
+	background-color: #777;
+}
+
+#bug-report-area:focus {
+	outline: none;
+	box-shadow: 0px 0px 12px 1px #ccc;
+}
+
+#footer {
+	margin-left: 10px;
+	color: #666;
+}
+
+#right {
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	width: 50%;
+	background-color: #c55;
+	color: #333;
+	overflow: auto;
+}
+
+#step {
+	padding-top: 20px;
+	text-align: center;
+	color: #833;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 0px 0px 7px #a66;
+}
+
+#right hr {
+	border: 0px;
+	height: 1px;
+	width: calc(100% - 30px);
+	background-color: #833;
+	box-shadow: 0px 0px 4px #833;
+}
+
+#inst-container {
+	min-height: calc(100% - 170px);
+}
+
+.instructions {
+	padding: 20px 10px 10px 10px;
+	text-align: center;
+}
+
+.instructions:not(.inst-default) {
+	display: none;
+}
+
+.instructions b {
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #333;
+}
+
+.why {
+	font-weight: bold;
+}
+
+.why-expl {
+	padding: 5px 5px 5px 5px;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.examples {
+	font-size: 20px;
+	text-shadow: 0px 0px 1px #333;
+	font-style: italic;
+	margin-bottom: 6px;
+}
+
+#inst-footer {
+	text-align: center;
+}
+
+.btn {
+	margin-top: 8px;
+	border-radius: 12px;
+	border: 1px solid #a66;
+	display: inline-block;
+	line-height: 35px;
+	height: 35px;
+	width: 200px;
+	background-color: #c88;	
+}
+
+.btn:hover {
+	background-color: #d99;		
+}
