@@ -112,6 +112,7 @@ body {
 
 .why {
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .why-expl {
@@ -138,6 +139,7 @@ body {
 }
 
 .btn {
+	cursor: pointer;
 	margin-top: 8px;
 	border-radius: 12px;
 	border: 1px solid #a66;
