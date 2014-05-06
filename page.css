@@ -3,23 +3,27 @@ body {
 	font-family: 'Lucida Console';
 }
 
-a {
-	color: #aaa;
-}
-
 #left {
 	position: absolute;
 	height: 100%;
 	width: 50%;
-	background-color: #444;
+	background-color: #ccc;
 	outline: inset #888;
 	z-index: 1;
+}
+
+#left a {
+	color: #333;
+}
+
+#left a:hover {
+	color: #444;
 }
 
 .title {
 	padding-top: 12px;
 	text-align: center;
-	color: #333;
+	color: #666;
 	font-size: 30px;
 	font-weight: bold;
 	text-shadow: 0px 0px 7px #888;
@@ -34,16 +38,16 @@ a {
 	border: none;
 	box-shadow: 0px 0px 12px 1px #555;
 	resize: none;
-	background-color: #666;
+	background-color: #999;
 }
 
 #bug-report-area:hover, #bug-report-area:focus {
-	background-color: #777;
+	background-color: #aaa;
 }
 
 #bug-report-area:focus {
 	outline: none;
-	box-shadow: 0px 0px 12px 1px #ccc;
+	box-shadow: 0px 0px 12px 1px #fff;
 }
 
 #footer {
@@ -56,7 +60,7 @@ a {
 	height: 100%;
 	left: 50%;
 	width: 50%;
-	background-color: #c55;
+	background-color: #c88;
 	color: #333;
 	overflow: auto;
 }
@@ -69,8 +73,14 @@ a {
 	box-shadow: 0px 0px 4px #833;
 }
 
-#right a:hover {
+#right a {
 	color: #ccc;
+	text-decoration: none;
+}
+
+#right a:hover {
+	color: #ddd;
+	text-shadow: 1px 1px 2px #333;
 }
 
 #step {
@@ -135,9 +145,10 @@ a {
 	line-height: 35px;
 	height: 35px;
 	width: 200px;
-	background-color: #c88;	
+	background-color: #e55;
+	font-weight: bold;
 }
 
 .btn:hover {
-	background-color: #d99;		
+	background-color: #f33;		
 }
