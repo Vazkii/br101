@@ -38,19 +38,52 @@
 				</div>
 				<div id="inst1" class="instructions">
 					Start by briefly describing what the issue is, try to be as concise as possible. Make sure you highlight details, any cross mod interactions should be explained, the more you leave out, the harder it is to find the issue and fix it.<br><br>
+					If you're struggling to put an explanation of the issue in words, take a screenshot or a video. Minecraft has screenshots built in with the F2 key. After you took a screenshot, upload it to <a href="http://imgur.com/">imgur</a> or any other image hosting website.<br><br>
 					<div class="examples">Examples:</div>
-					<b>Bad: </b><i>i tried to create the blocky thingymajig and my game crashed help please</i><br><br>
-					<b>Good: </b><i>I was trying to create the Blocky Thingymajig, I gathered all the crafting components, when I pulled the item out of a Super Crafting Table from the SuperCrafting mod, my game crashed.</i>
+					<div class="example-box">
+						<b>Bad: </b><i>i tried to create the blocky thingymajig and my game crashed help please</i><br><br>
+						<b>Good: </b><i>I was trying to create the Blocky Thingymajig, I gathered all the crafting components, when I pulled the item out of a Super Crafting Table from the SuperCrafting mod, my game crashed.</i>
+					</div>
 				</div>
 				<div id="inst2" class="instructions">
-					lorem ipsum<br><br>
+					Make sure to include the FML log, regardless of your game having crashed or not. The log contains all sorts of important information such as which mods are loaded, alongside which versions. Make sure to check out the following points (click on them for more info):<br><br>
+					<div id="why4" class="why">How do I get the log?</div>
+					<div id="why-expl4" class="why-expl">
+						Start off by going to your .minecraft folder, as you normally do to install a mod. You should have a "logs" folder. Inside it, look for "fml-client-1.log", open it with Notepad or your text editor of choice (Notepad++ is pretty good!) and there you go, there's the log.
+					</div>
+					<div id="why5" class="why">Where do I put the log?</div>
+					<div id="why-expl5" class="why-expl">
+						Absolutely <b>never</b> paste the log next to the report, doing so causes an incredible amount of clutter and is really hard to look at. Instead of that, put the log in a paste hosting website and attach a link to it, here's a few examples:<br><br>
+						<a href="http://pastebin.com/">pastebin</a> <a href="http://hastebin.com/">hastebin</a> <a href="https://gist.github.com/">gist</a> <a href="http://www.pastie.org/">pastie</a> <a href="http://puush.me/">puush</a>
+					</div><br><br>
 					<div class="examples">Examples:</div>
-					<b>Bad: </b><i>potato</i><br><br>
-					<b>Good: </b><i>raddish</i>
+					<div class="example-box">
+						<b>Bad: </b><i>crash log: (crash log here)</i><br><br>
+						<b>Good: </b><i>FML Log: <a href="http://puu.sh/8BDKc.log">http://puu.sh/8BDKc.log</a></i>
+					</div>
+				</div>
+				<div id="inst3" class="instructions">
+					Review your issue. Make sure it's well structured, try to look at it from the point of view from someone who is trying to follow the steps you give them to reproduce what happened.<br><br>If the modder can't read what you did and reproduce the issue themselves, more likely than not, you left a step out. Try to follow it yourself and see if you can have it happen again with the information you gave only.<br><br>
+					<div class="examples">Example:</div>
+					<div class="example-box">
+						My game crashes when I try to create a Blocky Thingymajig from your mod using a Super Crafting Table from the SuperCrafting mod. I can get it to happen every time by simply placing the materials in the table and pulling the Blocky Thingymajig out (both via shift-click and just a normal click).<br><br>
+						This does not happen with any other item from any other mod (at least from the ones I've tried). The crafting works fine with a normal vanilla Crafting Table.
+						<br><br>
+						FML Log: <a href="http://puu.sh/8BDKc.log">http://puu.sh/8BDKc.log</a>
+					</div>
+				</div>
+				<div id="inst4" class="instructions">
+					Your issue is done, time to report it. The best place to do it varies from mod to mod. The best places to do it generally are on the mod's issue tracker (if one exists) or the mod's forum thread. Do <b>not</b> report a bug over IRC, Twitter or private messaging of any way, this makes your issue easy to forget, or disallow other people than the modder to help you with it.<br><br>
+					The best way to do it is to look for "<b>issue tracker</b>" or "<b>github repo</b>" on the mod's thread or website. That is the preferred way for most modders to track their issues (duh), as it lets them label the issue, edit it case something needs to be set, and of course, have all the issues categorized in a specific area.<br><br>
+					Before you pull the trigger and submit the issue, though, <b>make sure nobody else reported it</b>. Look around in the last few pages of the thread, or the issues page in the issue tracker, if somebody already reported the issue, reporting it again is a simple waste of time, both for you and for the modder. If you're looking on the issue tracker, make sure to check the both the open and closed issues, as the issue might have been fixed already.<br><br>
+				</div>
+				<div id="inst5" class="instructions">
+					And there you go, you have successfully reported your issue!<br><br>
+					If you're interested on learning more about bug reporting, Simon Tatham wrote <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">an essay</a> about that very matter, if you're committed to be an awesome bug reporter, it's definitely worth a read.<br><br>
+					<a href="https://twitter.com/intent/tweet?text=I%20just%20used%20@Vazkii%27s%20%22Bug%20Reporting%20101%22%20to%20report%20an%20issue%20in%20a%20mod!%20Check%20it%20out:%20http://vazkii.us/br101">Tweet about this!</a>
 				</div>
 			</div>
 			<div id="inst-footer">
-				Done?<br>
 				<div id="btn-back" class="btn">Back</div> <div id="btn-next" class="btn">Next</div>
 			</div>
 		</div>

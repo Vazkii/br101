@@ -1,21 +1,27 @@
 const min = 0;
-const max = 2;
+const max = 5;
 
 var current = 0;
 var openExplanation = -1;
 var animationsEnabled = true;
 
 $('.btn').click(function() {
+	if(!animationsEnabled)
+		return;
+	
 	var next = $(this).attr('id') == 'btn-next';
 	if(next ? (current == max) : (current == min))
 		return;
 
+	animationsEnabled = false;
 	$('#inst' + current).fadeOut(function() {
 		current += (next ? 1 : -1);
 		$('#inst' + current).fadeIn(function() {
 			$('#step-counter').fadeOut(150, function() {
 				$(this).text(current);
-				$(this).fadeIn(150);
+				$(this).fadeIn(150, function() {
+					animationsEnabled = true;
+				});
 			});
 		});
 	});
