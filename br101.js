@@ -16,13 +16,12 @@ $('.btn').click(function() {
 	animationsEnabled = false;
 	$('#inst' + current).fadeOut(function() {
 		current += (next ? 1 : -1);
-		$('#inst' + current).fadeIn(function() {
-			$('#step-counter').fadeOut(150, function() {
+		$('#step-counter').fadeOut(150, function() {
 				$(this).text(current);
-				$(this).fadeIn(150, function() {
-					animationsEnabled = true;
-				});
+				$(this).fadeIn(150);
 			});
+		$('#inst' + current).fadeIn(function() {
+			animationsEnabled = true;
 		});
 	});
 });
