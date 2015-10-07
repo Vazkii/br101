@@ -3,12 +3,16 @@ body {
 	font-family: 'Lucida Console', monospace;
 }
 
-#left {
+#left, #right {
 	position: absolute;
 	height: 100%;
 	width: 50%;
+	overflow: auto;
+}
+
+#left {
 	background-color: #ccc;
-	outline: inset #888;
+	border-right: inset #888;
 	z-index: 1;
 }
 
@@ -32,7 +36,7 @@ body {
 #bug-report-area {
 	margin: 20px 20px 15px 20px;
 	width: calc(100% - 40px);
-	height: calc(100% - 100px);
+	height: calc(100% - 112px);
 	font-size: 16px;
 	font-weight: bold;
 	border: none;
@@ -56,13 +60,13 @@ body {
 }
 
 #right {
-	position: absolute;
-	height: 100%;
 	left: 50%;
-	width: 50%;
 	background-color: #c88;
 	color: #333;
-	overflow: auto;
+}
+
+#right >:last-child {
+	padding-bottom: 20px;
 }
 
 #right hr {
@@ -93,7 +97,7 @@ body {
 }
 
 #inst-container {
-	min-height: calc(100% - 170px);
+	min-height: calc(100% - 180px);
 }
 
 .instructions {
