@@ -8,7 +8,7 @@ var animationsEnabled = true;
 $('.btn').click(function() {
 	if(!animationsEnabled)
 		return;
-	
+
 	var next = $(this).attr('id') == 'btn-next';
 	if(next ? (current == max) : (current == min))
 		return;
@@ -16,13 +16,14 @@ $('.btn').click(function() {
 	animationsEnabled = false;
 	$('#inst' + current).fadeOut(function() {
 		current += (next ? 1 : -1);
-		$('#step-counter').fadeOut(150, function() {
-				$(this).text(current);
-				$(this).fadeIn(150);
-			});
+		$('#right').scrollTop(0);
 		$('#inst' + current).fadeIn(function() {
 			animationsEnabled = true;
 		});
+	});
+	$('#step-counter').fadeOut(function() {
+		$(this).text(current);
+		$(this).fadeIn(150);
 	});
 });
 
